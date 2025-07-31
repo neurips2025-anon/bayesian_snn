@@ -38,10 +38,10 @@ python train_cifar.py --method "bayesian" --scale_style "learnable" --batch_size
 ### Arguments
 
 - `--method`: Training method (`"bayesian"` or `"sg"`)  
-- `--scale_style`: Scale initialization (`"learnable"` or `"fixed"`)  
+- `--scale_style`: Controls whether the posterior variance is learned or fixed (`"learnable"` or `"fixed"`)  
 - `--batch_size`: Batch size (default: 256)  
 - `--epochs`: Number of training epochs (default: 200)  
-- `--time_steps`: Number of time steps (default: 1)  
+- `--time_steps`: Number of time steps (1 for binary networks, >1 for spiking networks)  
 - `--seed`: Random seed for reproducibility
 
 ### Output
@@ -68,10 +68,10 @@ python train_dvs.py --method "bayesian" --scale_style "learnable" --batch_size 1
 ### Arguments
 
 - `--method`: Training method (`"bayesian"` or `"sg"`)  
-- `--scale_style`: Noise scaling mode (`"learnable"` or `"fixed"`)  
+- `--scale_style`: Controls whether the posterior variance is learned or fixed (`"learnable"` or `"fixed"`)  
 - `--batch_size`: Training batch size  
 - `--epochs`: Number of training epochs  
-- `--time_steps`: Temporal window size (e.g., 49 for full gesture)  
+- `--time_steps`: Number of time steps (1 for binary networks, >1 for spiking networks)  
 - `--seed`: Random seed for reproducibility
 
 ### Output
@@ -98,10 +98,10 @@ python train_shd.py --method "bayesian" --scale_style "learnable" --batch_size 3
 ### Arguments
 
 - `--method`: Training method (`"bayesian"` or `"sg"`)  
-- `--scale_style`: Noise scaling method (`"learnable"` or `"fixed"`)  
+- `--scale_style`: Controls whether the posterior variance is learned or fixed (`"learnable"` or `"fixed"`)  
 - `--batch_size`: Batch size for training  
 - `--epochs`: Number of epochs  
-- `--time_steps`: Length of the temporal window (default: 100)  
+- `--time_steps`: Number of time steps (1 for binary networks, >1 for spiking networks)  
 - `--seed`: Random seed for reproducibility
 
 ### Output
