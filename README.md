@@ -1,4 +1,4 @@
-========
+
 SUMMARY
 ========
 This repository contains the training code for the experiments reported in "A Principled Bayesian Framework for Training Binary and Spiking Neural Networks". 
@@ -12,13 +12,13 @@ To implement the surrogate gradient method, use:
 Each experiment includes a training script and preprocessed data (already included in the repository). No additional downloads are required.
 
 
-========
+
 REQUIREMENTS
 ========
 pip install -r requirements.txt
 
 
-========
+
 CIFAR-10 Experiment
 ========
 
@@ -51,7 +51,7 @@ Saves model checkpoint as:
     {method}_cifar10.pth
 
 
-========
+
 DVS Gesture Experiment
 ========
 
