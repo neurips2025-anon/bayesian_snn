@@ -11,7 +11,7 @@ For each dataset:
 - To implement the surrogate gradient method, use:  
   `--method "sg" --scale_style "fixed"`
 
-Each experiment includes a training script and preprocessed data (already included in the repository). No additional downloads are required.
+Each experiment includes a training script and preprocessed data. 
 
 ---
 
@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 ### Files
 - `train_cifar.py`: Main training script  
-- The required data is stored in `~/data`
+- The required data will be automatically downloaded and stored in `~/data` when the training script is exectuted. 
 
 ### Run Training
 
@@ -57,7 +57,7 @@ Model checkpoint is saved as:
 
 - `train_dvs.py`: Main training script  
 - `dvs_data.py`: Dataset definition and preprocessing for DVS Gesture chains  
-- Required data: `~/DVSGC_frames_number_49_split_by_number`
+- Required data provided in the folder `~/DVSGC_frames_number_49_split_by_number`
 
 ### Run Training
 
@@ -87,7 +87,7 @@ Trained model saved as:
 
 - `train_shd.py`: Main training script  
 - `shd_data.py`: Dataset download, preprocessing, and caching  
-- Required data is stored in `~/hdspikes`
+- The required data will be automatically downloaded and stored in `~/hdspikes` when the training script is exectuted. 
 
 ### Run Training
 
